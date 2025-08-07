@@ -1,18 +1,21 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './styles/theme';
+import { GlobalStyles } from './styles/GlobalStyles';
 import SearchPage from './pages/SearchPage';
 import AlbumDetailPage from './pages/AlbumDetailPage';
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <h1>Mi Biblioteca Musical Dinámica 🎵</h1>
       <Routes>
         <Route path="/" element={<SearchPage />} />
-        {/* Usamos :albumId para crear una ruta dinámica */}
         <Route path="/album/:albumId" element={<AlbumDetailPage />} />
       </Routes>
-    </div>
+    </ThemeProvider>
   );
 }
 
