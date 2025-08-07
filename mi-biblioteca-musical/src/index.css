@@ -1,0 +1,83 @@
+/* Estilos generales y tema oscuro */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  border-bottom: 2px solid #bb86fc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Enlaces */
+a {
+  color: #bb86fc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #3700b3;
+}
+
+/* Formularios */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 1rem;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #e0e0e0;
+  border-radius: 4px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #bb86fc;
+  color: #121212;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #a362fa;
+}
+
+/* Listas */
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border-left: 4px solid #bb86fc;
+}
+
+ol li {
+  border-left: 4px solid #03dac6;
+}
